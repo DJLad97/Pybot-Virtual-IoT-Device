@@ -1,33 +1,139 @@
-.App {
-  text-align: center;
+body {
+	background: #444;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.frame {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 400px;
+	height: 400px;
+	margin-top: -200px;
+	margin-left: -200px;
+	border-radius: 2px;
+	/* box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1); */
+	overflow: hidden;
+	background: #444;
+	color: #333;
+	font-family: "Open Sans", Helvetica, sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#glow-Ross {
+	box-shadow: 0px 0px 30px 5px #FFFC00;
+	border-radius: 50px;
+	width: 76px;
+	height: 76px;
+	background: #FFFC00;
+	position: absolute;
+	top: 135px;
+	transition: all 0.5s ease-in-out;
 }
 
-.App-link {
-  color: #61dafb;
+#glow-Dan {
+	box-shadow: 0px 0px 30px 5px green;
+	border-radius: 50px;
+	width: 76px;
+	height: 76px;
+	background: green;
+	position: absolute;
+	top: 135px;
+	transition: all 0.5s ease-in-out;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#glow-Shane {
+	box-shadow: 0px 0px 30px 5px blue;
+	border-radius: 50px;
+	width: 76px;
+	height: 76px;
+	background: blue;
+	position: absolute;
+	top: 135px;
+	transition: all 0.5s ease-in-out;
+}
+
+#glow-Matt {
+	box-shadow: 0px 0px 30px 5px #FF7F50;
+	border-radius: 50px;
+	width: 76px;
+	height: 76px;
+	background: #FF7F50;
+	position: absolute;
+	top: 135px;
+	transition: all 0.5s ease-in-out;
+}
+
+#glow-Unknown {
+	box-shadow: 0px 0px 30px 5px white;
+	border-radius: 50px;
+	width: 76px;
+	height: 76px;
+	background: white;
+	position: absolute;
+	top: 135px;
+	transition: all 0.5s ease-in-out;
+}
+
+#bulb-Ross {
+	fill: #FFFC00;
+	transition: all 0.5s ease-in-out;
+	cursor: pointer;
+	position: relative;
+	z-index: 2;
+}
+
+#bulb-Dan {
+  fill: rgb(128, 73, 0);
+	transition: all 0.5s ease-in-out;
+	cursor: pointer;
+	position: relative;
+	z-index: 2;
+}
+
+#bulb-Shane {
+  fill: blue;
+	transition: all 0.5s ease-in-out;
+	cursor: pointer;
+	position: relative;
+	z-index: 2;
+}
+
+#bulb-Matt {
+  fill: #FF7F50;
+	transition: all 0.5s ease-in-out;
+	cursor: pointer;
+	position: relative;
+	z-index: 2;
+}
+
+#bulb-Unknown {
+  fill: white;
+	transition: all 0.5s ease-in-out;
+	cursor: pointer;
+	position: relative;
+	z-index: 2;
+}
+
+#bulb {
+  fill: #999;
+	transition: all 0.5s ease-in-out;
+	cursor: pointer;
+	position: relative;
+	z-index: 2;
+}
+
+#bulb:hover {
+	fill: #999;
+}
+
+#bulb:hover ~ #glow {
+	/* opacity: 0; */
+}
+
+#base {
+	fill: #eee;
+	margin-top: 5px;
 }
